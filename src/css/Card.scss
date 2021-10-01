@@ -1,0 +1,74 @@
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 370px;
+    background-color: #fff;
+    justify-content: space-between;
+    border-radius: 5px;
+    position: relative;
+    &__header {
+        height: 200px;
+    }
+    &__cover {
+        object-fit: cover;
+        height: 200px;
+        width: 250px;
+    }
+    img {
+        border-radius:  5px 5px 0px 0px;
+    }
+
+    .delete-icon {
+        position: absolute;
+        width: 24px;
+        top: -10px;
+        right: -10px;
+        background-color: #f8f8f8;
+        border: 1px solid gray;
+        padding: 2px;
+        border-radius: 10px 10px 10px 0;
+    }
+    .edit-icon {
+        position: absolute;
+        width: 24px;
+        top: -10px;
+        right: 24px;
+        background-color: #f8f8f8;
+        border: 1px solid gray;
+        padding: 2px;
+        border-radius: 10px 10px 10px 0;
+    }
+    .star {
+        display: flex;
+        width: 20px;
+    }
+
+    &__body {
+        height: 100%;
+        padding: 10px;
+        .star-wrapper {
+            display: flex;
+            padding: 0 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            .title {
+                font-size: 15px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            .desc {
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
